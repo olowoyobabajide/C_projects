@@ -4,13 +4,16 @@ int factorial(int num);
 
 int main()
 {
-	int dig = 5;
-	printf("%d\n", factorial(dig));
+	int dig;
+
+	printf("Pls input a number\nThe computer would give the factorial of that number: ");
+	scanf("%d", &dig);
+	printf("\nThe factorial of %d is %d\n", dig, factorial(dig));
 }
 
 int factorial(int fact)
 {
-	if (fact == 1)
+	if (fact == 1 || fact == 0)
 	{
 		return 1;
 	}
